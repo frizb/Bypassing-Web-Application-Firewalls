@@ -10,9 +10,13 @@ These scripts were created during an assessment, while trying to bypass a Web Ap
 When I tried to send a > or < character the WAF would block the request.
 
 The following characters are traslated to < > with some webservers like Apache and can sometimes bypass filtering:
+
 %3C
+
 %3E
+
 %3c
+
 %3e
 
 The following URL escapes I have noticed are traslated to < > ' by Apache2 based web servers:
