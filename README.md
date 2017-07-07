@@ -1,5 +1,5 @@
-# Bypassing-Web-Application-Firewalls
-A series of python scripts for generating weird character combinations for bypassing web application firewalls (WAF).
+# Bypassing-Web-Application-Firewalls-And-XSS-Filters
+A series of python scripts for generating weird character combinations and lists for BurpSuite Pro for bypassing web application firewalls (WAF) and XSS filters.
 These python scripts have been created to fuzz wierd combinations:
 
  * URL Escape Characters 
@@ -7,6 +7,7 @@ These python scripts have been created to fuzz wierd combinations:
  * Binary Characters
 
 These scripts were created during an assessment, while trying to bypass a Web Application Firewall (WAF) in order to exploit a XSS vulnerability.
+Differnt webservers and browsers interpret URL and strange characters differently which could lead to the bypassing of security controls.
 When I tried to send a > or < character the WAF would block the request.
 
 The following URL escapes I have noticed are traslated to < > ' by Apache2 based web servers:
